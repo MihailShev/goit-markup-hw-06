@@ -99,6 +99,12 @@ ol {
     padding: 120px 156px;
   }
 }
+
+@media screen and (min-width: 320px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
 /* ===== /general style===== */
 
 /* ===== header style===== */
@@ -846,3 +852,130 @@ ol {
     height: 80px;
   }
 }
+
+/* ===== /footer section===== */
+
+/* ===== modal menu ===== */
+.modal-menu-mobile {
+  position: fixed;
+  z-index: 999999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal-menu {
+  position: relative;
+  background-color: #fff;
+  height: 100%;
+  padding-top: 72px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-menu-mobile.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: unset;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e9fc;
+  border: 1px solidr rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-close {
+  display: block;
+}
+
+.menu-nav {
+  margin-bottom: auto;
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.menu-nav-list-item-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.menu-nav-list-item-link.current {
+  color: #404bbf;
+}
+
+.menu-address {
+  margin-bottom: 48px;
+}
+
+.menu-address-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.nemu-address-list-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+}
+
+.addres-list-item-link:active {
+  color: #4d5ae5;
+}
+
+.menu-social-list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.menu-social-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-menu-mobile {
+    display: none;
+  }
+}
+
+/* ===== /modal menu===== */
+
+/* ===== modal window===== */
+
+/* ===== /modal window===== */
