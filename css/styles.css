@@ -239,7 +239,7 @@ ol {
 .main-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.12;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
@@ -305,3 +305,74 @@ ol {
     margin: 0 auto 45px;
   }
 }
+
+/* ===== /section hero===== */
+
+/* ===== section fact===== */
+
+.list-fact {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+}
+
+.name-fact {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.fact {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.box-icon {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .list-fact {
+    gap: 24px;
+  }
+
+  .item-fact {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .name-fact {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .item-fact {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .box-icon {
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .name-fact {
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+/* ===== /section fact===== */
+
+/* ===== section team===== */
