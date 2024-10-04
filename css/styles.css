@@ -947,6 +947,10 @@ ol {
   color: #2e2f42;
 }
 
+.menu-nav-list-item-link.current {
+  color: #404bbf;
+}
+
 .menu-nav-list-item-link:active {
   color: #404bbf;
 }
@@ -968,6 +972,10 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
   font-style: normal;
+}
+
+.addres-list-item-link.current {
+  color: #404bbf;
 }
 
 .addres-list-item-link:active {
