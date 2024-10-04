@@ -913,7 +913,7 @@ ol {
   color: #2e2f42;
 }
 
-.menu-nav-list-item-link.current {
+.menu-nav-list-item-link:active {
   color: #404bbf;
 }
 
