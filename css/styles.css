@@ -140,7 +140,6 @@ ol {
   border: none;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .icon-menu {
@@ -890,7 +889,6 @@ ol {
   background-color: #e7e9fc;
   border: 1px solidr rgba(0, 0, 0, 0.1);
   padding: 0;
-  cursor: pointer;
 }
 
 .icon-close {
